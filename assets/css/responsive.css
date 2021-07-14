@@ -1,0 +1,120 @@
+/* PC */
+
+@media (min-width: 64em) {
+    
+}
+/* TABLET */
+
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    #main {
+        max-width: 100%;
+        overflow: hidden;
+    }
+    
+    .buy-tickets {
+        padding: 8px 12px;
+    }
+
+    .information {
+        padding: 64px 8px;
+    }
+}
+
+@media (max-width: 46.1875em) {
+    #main {
+        overflow: hidden;
+    }
+
+    #header {
+        overflow: hidden;
+        z-index: 1;
+    }
+    
+    #header .search-btn {
+        display: none;
+    }
+
+    #nav li{
+        display: block;
+    }
+
+    #slider .text-content {
+        line-height: 32px;
+        bottom: 16px;
+    }
+
+    #slider .text-heading {
+        font-size: 20px;
+    }
+
+    #slider .text-decoration {
+        font-size: 12px;
+    }
+
+    .content-band {
+        height: 100%;
+        padding: 0 16px;
+    }
+
+    .the-band {
+        margin-top: 64px;
+    }
+
+    .tourist-attraction,
+    .member-band {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .name-member {
+        padding-top: 12px;
+    }
+
+    .tour-all {
+        margin-top: 0;
+    }
+
+    .buy-tickets {
+        text-align: center;
+        width: 100%;
+    }
+
+    .row {
+        margin-right: -4px;
+    }
+
+    .col {
+        padding-right: 12px;
+        padding-left: 0;
+    }
+
+    .col-half {
+        width: 100%;
+        margin-top: 16px;
+    }
+
+    .col-full {
+        margin-top: 8px;
+    }
+
+    .contact-info {
+        padding-left: 24px;
+    }
+
+    .send-btn {
+        width: 96%;
+        margin: 0 8px;
+    }
+
+    .icon-btn {
+        margin-bottom: 32px;
+    }
+
+    .icon-btn i[class*="far "], .icon-btn i[class*="fab "] {
+        width: 56px;
+    }
+}
+
+@media (max-width: 46.1875em){
+
+}

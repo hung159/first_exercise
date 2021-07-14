@@ -1,0 +1,444 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html ,body{
+    line-height: 1.5;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.pd-64 {
+    padding: 64px 16px !important;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.mt-32 {
+    margin-top: 32px !important;
+}
+
+.mb-32 {
+    margin-bottom: 32px !important;
+}
+
+.mb-64 {
+    margin-bottom: 64px !important;
+}
+
+.mt-64 {
+    margin-top: 64px !important;
+}
+
+.row {
+    margin-left: 8px;
+    margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-full {
+    width: 100%;
+}
+
+
+.m-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#header {
+    background-color: #000;
+    height: 46px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav li{
+    display: inline-block;
+    position: relative;
+}
+
+#nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+} 
+
+#nav li a {
+    display: inline-block;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+}
+
+#nav .subnav li:hover,
+#nav > li:hover > a {
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    min-width: 160px;
+}
+
+#nav .subnav a {
+    color: #000;
+    padding: 0 16px;
+}
+
+.subnav li {
+    width: 100%;
+}
+
+#header .mobile-menu-btn,
+#header .search-btn {
+    float: right;
+}
+
+
+#header .search-btn:hover {
+    cursor: pointer;
+    background-color: red;
+} 
+
+#header .mobile-menu-btn:hover {
+    background-color: #ccc;
+}
+
+#header .mobile-menu-btn:hover .menu-icon {
+    color: #000;
+}
+
+.menu-icon,
+.search-icon {
+    color: #fff;
+    line-height: 46px;
+    padding: 0 16px;
+}
+
+#slider {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/assets/img/slider/slider3.jpg') top center / cover no-repeat;
+    z-index: -1;
+}
+
+#slider .text-content {
+    color: #fff;
+    position: absolute;
+    bottom: 47px;
+    right: 0;
+    left: 0;
+    text-align: center;
+    line-height: 40px;
+}
+
+#slider .text-heading {
+    font-size: 24px;
+}
+
+#slider .text-decoration {
+    font-weight: 600;
+}
+
+.content-band {
+    width: 800px;
+    max-width: 100%;
+    height: 543px;
+    padding: 64px 16px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.the-band {
+    font-size: 30px;
+    margin: 10px 0;
+    letter-spacing: 4px;
+}
+
+.Word-of-mouth {
+    margin: 15px 0;
+    opacity: 0.4;
+    text-align: center;
+}
+
+.document-band {
+    font-size: 15px;
+    text-align: justify;
+    margin: 16px 0;
+}
+
+.member-band {
+    padding: 32px 0 96px;
+    display: flex;
+}
+
+.member-first {
+    flex-grow: 1;
+}
+
+
+.member-second {
+    flex-grow: 1;
+}
+
+.member-third {
+    flex-grow: 1;
+}
+
+.name-member {
+    margin: 15px 0;
+}
+
+.member-band img {
+    width: 60%;
+}
+
+.tour-all {
+    background-color: #000;
+    margin-top: 128px;
+}
+
+.tour {
+    width: 800px;
+    max-width: 100%;
+    height: 100%;
+    padding: 64px 16px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #fff;
+}
+
+.tour-dates {
+    font-size: 30px;
+    margin: 10px 0;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.monthly-tickets {
+    margin: 32px 0 28px;
+    background-color: #fff;
+}
+
+.monthly-all {
+    text-align: justify;
+    list-style: none;
+    border-bottom: 1px solid #000;
+}
+
+.monthly-all li{
+    border-bottom: 1px solid #ddd;
+    padding: 8px 16px;
+}
+
+.tour-padding {
+    color: rgb(133, 125, 125);
+}
+
+.tour-padding .sold-out {
+    background-color: #f44336;
+    color: #fff;
+    margin-left: 16px;
+    padding: 3px 7px;
+}
+
+.tour-padding .number-tickets {
+    float: right;
+    padding: 1px 8px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.tourist-attraction {
+    display: flex;
+    margin: 32px -8px 0;
+}
+
+.tourist-attraction img{
+    vertical-align: middle;
+}
+
+.tourist-attraction img:hover{
+    opacity: 0.6;
+}
+
+.new-york {
+    padding: 0 8px;
+    flex-grow: 1;
+}
+
+.paris{
+    padding: 0 8px;
+    flex-grow: 1;
+}
+
+.san-francisco {
+    padding: 0 8px;
+    flex-grow: 1;
+}
+
+.container {
+    background-color: #fff;
+    height: 210px;
+    color: #000;
+    text-align: justify;
+    padding: 0 16px;
+    margin-bottom: 40px;
+}
+
+.place{
+    padding: 15px 0;
+    font-weight: bolder;
+}
+
+.time{
+    opacity: 0.5;
+    padding-bottom: 15px;
+}
+
+p {
+    font-size: 15px;
+}
+
+.buy-tickets {
+    background-color: #000;
+    color: #fff;
+    width: 55%;
+    padding: 8px 16px;
+    margin: 15px 0;
+}
+
+.container .buy-tickets:hover {
+    cursor: pointer;
+    background-color: #ccc;
+    color: #000;
+}
+
+.information {
+    max-width: 800px;
+    padding: 64px 0;
+}
+
+.contact-info {
+    line-height: 1.8;
+}
+
+.contact-info a {
+    color: #101aef;
+    opacity: 0.8;
+}
+
+.contact-info a:hover {
+    opacity: 1;
+}
+
+.contact-info i[class*="fas "] {
+    width: 30px;
+}
+
+.form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.send-btn {
+    float: right;
+    background-color: #000;
+    color: #fff;
+    border: 0;
+    padding: 12px 16px;
+}
+
+.send-btn:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.icon-btn i[class*="far "], 
+.icon-btn i[class*="fab "] {
+    font-size: 24px;
+    color: #000;
+    opacity: 0.6;
+}
+
+.icon-btn i[class*="far "]:hover, 
+.icon-btn i[class*="fab "]:hover {
+    opacity: 0.4;
+}
+
+.end {
+    font-size: 15px;
+    color: #000;
+    opacity: 0.6;
+}
+
+.end a {
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
